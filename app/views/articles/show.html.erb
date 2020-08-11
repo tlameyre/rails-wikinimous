@@ -1,0 +1,7 @@
+<div class="d-flex align-items-end">
+  <h1 class="mr-3"><%= @article.title %></h1>
+  <p class="mr-3"> <%= link_to "🗑", article_path(@article), method: :delete %></p>
+  <p class="mr-3"> <%= link_to "📝", edit_article_path(@article)%></p>
+</div>
+<p><%= @article.content %></p>
+<%= link_to 'Back to the articles', articles_path %>
